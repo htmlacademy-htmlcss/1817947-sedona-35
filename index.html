@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="page-container">
     <header class="main-header">
       <nav class="navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="#">
           <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
         </a>
         <ul class="navigation-list">
@@ -20,7 +21,7 @@
         <ul class="navigation-user">
           <li class="navigation-user-item"><a class="navigation-link" href="#"><img src="#" alt="Логотип для поиска."><span class="visually-hidden">Поиск</span></a></li>
           <li class="navigation-user-item"><a class="navigation-link" href="#"><img src="#" alt="Количество избранного."><span class="visually-hidden">Избранное</span></a></li>
-          <li class="navigation-user-item"><a class="navigation-link" href="#"><span class="link-button">Хочу сюда!</span></a></li>
+          <li class="navigation-user-item"><a class="navigation-link" href="#"><span class="button link-button">Хочу сюда!</span></a></li>
         </ul>
       </nav>
     </header>
@@ -45,7 +46,7 @@
         </div>
 
         <ul class="advantages-list">
-          <li>
+          <li class="advantages-item-square">
             <p class="advantages-item-title">Небольшая<br>площадь</p>
             <span>——</span>
             <p>Все достопримечательности<br>находятся очень близко</p>
@@ -55,7 +56,7 @@
             <span>——</span>
             <p>Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
           </li>
-          <li>
+          <li class="advantages-item-tourists">
             <p class="advantages-item-title">Мало<br>туристов</p>
             <span>——</span>
             <p>Большинство едет в Гранд<br>Каньон и толпится там</p>
@@ -70,7 +71,7 @@
         </div>
 
         <ul class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item-house">
             <p class="advantages-item-title">Жильё</p>
             <p>Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
@@ -78,7 +79,7 @@
             <p class="advantages-item-title">Еда</p>
             <p>Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item-souvenirs">
             <p class="advantages-item-title">Сувениры</p>
             <p>Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </li>
@@ -99,8 +100,8 @@
       <div class='newsletter-container'>
       <div class="newsletter">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="newsletter-info">Подпишитесь на рассылку</p>
-        <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <p class="newsletter-title">Подпишитесь на рассылку</p>
+        <p class="newsletter-info">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
@@ -121,7 +122,7 @@
           <a class="telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="footer-logo">
-          <a href=""><img src="images/logo-footer.svg" width="115" height="33" alt="Логотип html academy."></a>
+          <a href="https://htmlacademy.ru"><img src="images/logo-footer.svg" width="115" height="33" alt="Логотип html academy."></a>
         </div>
       </section>
     </footer>
