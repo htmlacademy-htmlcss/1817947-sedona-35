@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -18,7 +20,7 @@
           <li class="navigation-item"><a class="navigation-link" href="about.html">О Седоне</a></li>
           <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
-        <ul class="navigation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-user-item"><a class="navigation-link" href="#"><img src="#" alt="Логотип для поиска."><span class="visually-hidden">Поиск</span></a></li>
           <li class="navigation-user-item"><a class="navigation-link" href="#"><img src="#" alt="Количество избранного."><span class="visually-hidden">Избранное</span></a></li>
           <li class="navigation-user-item"><a class="navigation-link" href="#"><span class="button link-button">Хочу сюда!</span></a></li>
@@ -38,15 +40,17 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages-flex">
         <div class="advantages-point">
           <p class="advantages-point-title">Настоящий<br>городок</p>
           <span>——</span>
           <p>Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
-          <img src="images/house.jpg" width="800" height="384" alt="Седона, красивые дома.">
+        </div>
+        <img class="advantages-picture" src="images/house.jpg" width="800" height="384" alt="Седона, красивые дома.">
         </div>
 
         <ul class="advantages-list">
-          <li class="advantages-item-square">
+          <li class="advantages-item">
             <p class="advantages-item-title">Небольшая<br>площадь</p>
             <span>——</span>
             <p>Все достопримечательности<br>находятся очень близко</p>
@@ -56,22 +60,24 @@
             <span>——</span>
             <p>Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
           </li>
-          <li class="advantages-item-tourists">
+          <li class="advantages-item">
             <p class="advantages-item-title">Мало<br>туристов</p>
             <span>——</span>
             <p>Большинство едет в Гранд<br>Каньон и толпится там</p>
           </li>
         </ul>
 
+        <div class="advantages-flex">
+        <img class="advantages-picture" src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола природного происхождения.">
         <div class="advantages-point">
-          <img src="images/bridge.jpg" width="800" height="384" alt="Мост дьявола природного происхождения.">
           <p class="advantages-point-title">Там есть<br>мост дьявола</p>
           <p>——</p>
           <p>Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
         </div>
+        </div>
 
         <ul class="advantages-list">
-          <li class="advantages-item-house">
+          <li class="advantages-item">
             <p class="advantages-item-title">Жильё</p>
             <p>Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
@@ -79,7 +85,7 @@
             <p class="advantages-item-title">Еда</p>
             <p>Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-item-souvenirs">
+          <li class="advantages-item">
             <p class="advantages-item-title">Сувениры</p>
             <p>Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </li>

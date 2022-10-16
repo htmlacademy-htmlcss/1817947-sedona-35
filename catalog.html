@@ -18,7 +18,7 @@
           <li class="navigation-item"><a class="navigation-link" href="about.html">О Седоне</a></li>
           <li class="navigation-item"><a class="navigation-link" href="#" aria-current="page">Гостиницы</a></li>
         </ul>
-        <ul class="navigation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-user-item"><a class="navigation-link" href="#"><img src="#" alt="Логотип для поиска."><span class="visually-hidden">Поиск</span></a></li>
           <li class="navigation-user-item"><a class="navigation-link" href="#"><img src="#" alt="Количество избранного."><span class="visually-hidden">Избранное</span></a></li>
           <li class="navigation-user-item"><a class="navigation-link" href="#"><span class=" button link-button">Хочу сюда!</span></a></li>
@@ -28,6 +28,7 @@
 
     <main class="container">
       <section class="search-form">
+        <div class="form-wrapper">
         <h1 class="search-form-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -36,6 +37,7 @@
           </li>
           <li class="breadcrumbs-item">Гостиницы</li>
         </ul>
+
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="search-catalog" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="search-infrastructure">
@@ -73,11 +75,13 @@
           </div>
 
         </form>
+        </div>
       </section>
 
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка</h2>
         <p class="filter-search">Найдено гостиниц:38</p>
+        <div class="sorting-cards">
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
@@ -87,7 +91,6 @@
           </select>
           <button class="visually-hidden" type="submit">Отсортировать продукты</button>
         </form>
-        <div class="sorting-cards">
           <div>
             <a href="#"><span class="visually-hidden">Показать карточки</span><img src="#" alt="Вариант показа лист."></a>
           </div>
@@ -103,7 +106,7 @@
 
       <section class="search-result">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <ul>
+        <ul class="hotel-list">
           <li class="hotel">
             <div>
               <a class="product-card-link" href="#">
