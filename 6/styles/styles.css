@@ -1,0 +1,619 @@
+/* -----Шрифт PT Sans-----*/
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*-------------- body -----------------*/
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+/*-------------- container -----------------*/
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  flex-grow: 1;
+}
+
+/*-------------- navigation -----------------*/
+
+.navigation {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: capitalize;
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  position: relative;
+  margin-right: 30px;
+  width: 140px;
+  z-index: 1;
+}
+
+.header-logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 420px;
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation-link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  padding: 20px 16px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+  outline: tomato solid 1px;
+  padding: 20px 12px;
+}
+
+.navigation-link[aria-current="page"] {
+  border-bottom: 2px solid #756257;
+}
+
+.link-button {
+  display: block;
+  padding: 8px 34px;
+  margin-left: 20px;
+}
+
+
+/*-------------- button -----------------*/
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #756157;
+  border: none;
+}
+
+/*-------------- main-foto -----------------*/
+.foto-wrapper {
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
+  background-position: center bottom, center;
+  background-color: rgba(131, 179, 211, 0.2);
+  width: 1200px;
+  height: 458px;
+  margin: 0 auto;
+  background-repeat: no-repeat, no-repeat;
+  text-align: center;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  margin-bottom: 51px;
+}
+
+.about-sedona {
+  margin-bottom: 90px;
+}
+
+.about-sedona h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.about-sedona p {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+}
+
+/*-------------- advantages -----------------*/
+.advantages {
+  margin-bottom: 96px;
+}
+
+.advantages-list {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+
+.advantages-flex {
+  display: flex;
+}
+
+.advantages-picture {
+  max-width: 100%;
+  height: auto;
+}
+
+.advantages-list li {
+  width: 400px;
+}
+
+.advantages-point {
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-align: center;
+  width: 400px;
+  padding: 92px 85px 111px 85px;
+}
+
+.advantages-point-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 62px;
+}
+
+.advantages-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-point-text {
+  margin-top: 0;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-picture {
+  background-color: #82B3D3;
+}
+
+/*-------------- hotel-search -----------------*/
+.hotel-search {
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.hotel-search-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hotel-search-info {
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 54px;
+
+}
+
+.button-search {
+  font-size: 20px;
+  line-height: 36px;
+  border: none;
+  padding: 8px 50px;
+}
+
+/*-------------- footer -----------------*/
+.newsletter {
+  width: 1200px;
+  background-image: url("../images/blur-background.jpg");
+  background-position: top;
+  background-size: cover;
+  background-color: #3F5E72;
+  color: #ffffff;
+  text-align: center;
+  padding: 96px 258px 104px 258px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.catalog-newsletter {
+  background-image: none;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.newsletter-info {
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+
+.info-catalog {
+  color: #333333;
+}
+
+.button-newsletter {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  margin: 0;
+  padding: 8px 50px;
+}
+
+.social-list {
+  list-style-type: none;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  min-width: 48px;
+  min-height: 40px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  outline: tomato solid 1px;
+}
+
+.social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-contacts {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+/*-------------- catalog -----------------*/
+.form-wrapper {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.search-form {
+  color: #ffffff;
+  background-image: url("../images/catalog-background.jpg");
+  background-color: #3F5E72;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 23px;
+  padding: 35px 70px 70px 70px;
+  margin-bottom: 40px;
+}
+
+.search-form-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+  margin-right: 32px;
+}
+
+.search-legend {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.search-catalog fieldset {
+  border: none;
+}
+
+.button-submit {
+  background-color: #82B3D3;
+  padding: 8px 50px;
+}
+
+.button-reset {
+  background-color: transparent;
+  padding: 8px 58px;
+}
+
+.search-input {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.search-catalog {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*-------------- hotel-sorting-----------------*/
+.sorting {
+  width: 1060px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.filter-search {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sorting-link {
+  display: block;
+  min-width: 24px;
+  min-height: 24px;
+  outline: tomato solid 1px;
+  padding: 17px;
+}
+
+.sorting-link-cards {
+  display: flex;
+  width: 522px;
+  justify-content: flex-end;
+}
+
+/*-------------- hotel-cards-----------------*/
+.hotel-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 340px);
+  gap: 20px;
+}
+
+.hotel {
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.hotel-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.hotel-card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-result {
+  width: 1060px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.search-result ul {
+  list-style-type: none;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotel-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 140px;
+  padding: 9px 22px 8px 23px;
+  border-radius: 4px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.button-booking {
+  background-color: #82B3D3;
+  padding: 8px 20px;
+}
+
+.button-saved {
+  background-color: #7DB54F;
+  padding: 8px 18px;
+}
+
+.button-details {
+  padding: 8px 26px;
+}
+
+
+
+
+/*-------------- pagination-----------------*/
+.load-more {
+  width: 1060px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.pagination-item {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.last-link {
+  padding: 8px 19px;
+}
+
+.page-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.page-next {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+
+/*-------------- footer-catalog-----------------*/
+.newsletter-catalog {
+  text-align: center;
+}
+
+.title-catalog {
+  color: #000000;
+}
+
+
+/*-------------- visually-hidden ----------------*/
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
